@@ -1,0 +1,16 @@
+services:
+  ros-humble:
+    container_name: ros2devel
+    image: ros2:test
+    build: .
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - .:/root/workspace:rw
+    working_dir: /root/workspace
+    privileged: true
+    environment:
+      - DISPLAY
+    network_mode: host
+    shm_size: 2g
+    tty: true
+    
