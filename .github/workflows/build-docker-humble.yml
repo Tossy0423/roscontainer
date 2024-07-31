@@ -27,5 +27,5 @@ jobs:
         with:
           context: humble
           push: false
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/ros2:humble
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ros2:humble
 
