@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - main
-    schedule:
-      - cron '0 0 * * *'
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ./humble
+          context: "humble"
           push: false
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ros2:humble
 
