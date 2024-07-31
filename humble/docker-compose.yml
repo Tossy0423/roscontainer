@@ -2,7 +2,6 @@ services:
   ros-humble:
     container_name: ros2devel
     image: tossy0423/ros2:humble
-    build: .
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - .:/root/workspace:rw
