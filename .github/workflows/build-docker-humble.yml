@@ -9,7 +9,7 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
     steps:
       - 
@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           file: ./humble/Dockerfile
-          push: false
+          push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ros2:humble
 
