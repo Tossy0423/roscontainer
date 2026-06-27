@@ -1,0 +1,1 @@
+*/1 * * * * bash /workspace/.devcontainer/update_bashrc.bash

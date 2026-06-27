@@ -1,0 +1,16 @@
+{
+  "name": "ros2",
+  "dockerComposeFile": ["docker-compose.yaml"],
+  "service": "ros2",
+  "workspaceFolder": "/workspace",
+  "overrideCommand": true,
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "extensions": [
+      "MS-CEINTL.vscode-language-pack-ja",
+      "ms-vscode.cpptools-extension-pack",
+      "Ranch-Hand-Robotics.rde-pack",
+      "donjayamanne.python-extension-pack"
+    ]
+  }
+}
