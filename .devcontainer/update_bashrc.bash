@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euox pipefail
 trap 'echo "エラーを検知しました: $BASH_COMMAND"; exit 1' ERR
 
